@@ -23,11 +23,10 @@ export default function Callback() {
   return (
     <section class="contact_section layout_padding">
       <div class="container">
-
         <div class="heading_container">
-          <h2>
+          <div className='uppercase text-black text-2xl sm:text-4xl font-bold'>
             Request A Call Back
-          </h2>
+          </div>
         </div>
         <div class="">
           <div class="">

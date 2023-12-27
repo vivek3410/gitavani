@@ -38,67 +38,15 @@ export default function Home() {
                   <div class="row">
                     <div class="col">
                       <div class="detail-box relative">
-                        <div>
-                          <h2>
+                        <div >
+                          <div className='text-[1em] sm:text-[2em]'>
                             welcome to
-                          </h2>
-                          <h1>
-                            web agency
-                          </h1>
-                          <p>
+                          </div>
+                          <div className='text-[2em] sm:text-[4em]'>
+                            WEB AGENCY
+                          </div>
+                          <p className='text-[1em]'>
                             At Gitavni Tech, we are more than just a tech company – we are your digital partners, committed to turning your ideas into exceptional online experiences. Our team is fueled by passion, innovation, and a relentless pursuit of excellence.
-                          </p>
-                          <div class="">
-                            <a href="">
-                              Contact us
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col">
-                      <div class="detail-box">
-                        <div>
-                          <h2>
-                            welcome to
-
-                          </h2>
-                          <h1>
-                            web agency
-                          </h1>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                          </p>
-                          <div class="">
-                            <a href="">
-                              Contact us
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col">
-                      <div class="detail-box">
-                        <div>
-                          <h2>
-                            welcome to
-
-                          </h2>
-                          <h1>
-                            web agency
-                          </h1>
-                          <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
                           </p>
                           <div class="">
                             <a href="">
@@ -112,12 +60,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
           </div>
         </section>
       </div>
       <Whatwedo />
-      <Mission visible={true} />
+      {/* <Mission visible={true} /> */}
       <section class="work_section layout_padding">
         <div class="container">
           <div class="heading_container">
