@@ -18,7 +18,7 @@ export default function Footer() {
           <div class="row">
             <div class="col-md-3">
               <div class="info_contact">
-                <h5 className='text-customBrown'>
+                <h5 className='text-customBrown text-[4em] sm:text-[1.5em]'>
                   About Gitavani
                 </h5>
                 <p>

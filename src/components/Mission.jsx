@@ -14,9 +14,9 @@ export default function Mission({visible}) {
             <div class="col-md-7">
               <div class="detail-box">
                 <div class="heading_container">
-                  <h2>
+                  <div className='uppercase text-[2em] sm:text-[4em] font-bold mt-4'>
                     Our Mission
-                  </h2>
+                  </div>
                 </div>
                 <p>
                   At Gitavni Tech, our mission is to empower businesses and individuals by harnessing the full potential of the digital landscape. We believe in creating websites that not only meet but exceed your expectations, providing a platform for success in the online world.
