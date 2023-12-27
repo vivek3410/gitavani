@@ -63,7 +63,7 @@ export default function Header() {
                         </div>
                         {showMenu ? (
                             <>
-                                <div className='block sm:hidden  absolute shadow-2xl z-30 top-[3.5em] right-5 w-1/4  bg-white rounded-xl'>
+                                <div className='block sm:hidden  absolute shadow-2xl z-30 top-[3.5em] right-5 w-[10em] sm:w-1/4  bg-white rounded-xl'>
                                     <div className='flex flex-col gap-4 p-[1em] '>
                                         {routes.map((route) => (
                                             <>
