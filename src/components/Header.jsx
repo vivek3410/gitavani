@@ -1,11 +1,9 @@
-import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu } from 'lucide-react'
-import { useMediaQuery } from 'react-responsive';
+import React from 'react';
 
 export default function Header() {
     const [showMenu, setShowMenu] = React.useState(false);
-    const MenuToggle = useMediaQuery({ query: '(max-width: 640px)' })
     const routes = [
         {
             path: "/",
@@ -32,19 +30,19 @@ export default function Header() {
         setShowMenu(!showMenu);
     }
 
-    useEffect(() => {
-        const handleResize = () => {
-          // Set showMenu to false when the screen size is greater than or equal to 600px (adjust as needed)
-          if(showMenu && window.innerWidth > 640){
-            setShowMenu(false);
-          }
-        };
-        handleResize();
-        window.addEventListener('resize', handleResize);
-        return () => {
-          window.removeEventListener('resize', handleResize);
-        };
-      }, []);
+    // useEffect(() => {
+    //     const handleResize = () => {
+    //       // Set showMenu to false when the screen size is greater than or equal to 600px (adjust as needed)
+    //       if(showMenu && window.innerWidth > 640){
+    //         setShowMenu(false);
+    //       }
+    //     };
+    //     handleResize();
+    //     window.addEventListener('resize', handleResize);
+    //     return () => {
+    //       window.removeEventListener('resize', handleResize);
+    //     };
+    //   }, []);
     return (
         <div className='h-[4em] bg-black w-full flex justify-between items-center px-4'>
             <div className="navbar-brand">
@@ -53,15 +51,13 @@ export default function Header() {
                 </span>
             </div>
             <div >
-                {MenuToggle ? (
+                
                     <div className='sm:gap-12 sm:flex mr-4 hidden sm:block'>
                         {routes.map((route) => (
                             // <a key={route.path} className='text-white cursor-pointer' href={route.path}>{route.label}</a>
                             <Link key={route.path} className='hover:no-underline text-white text-none cursor-pointer' to={route.path} >{route.label}</Link>
                         ))}
                     </div>
-                ) : (
-                    <>
                         <div className='cursor-pointer block sm:hidden'>
                             <Menu className='text-white' onClick={() => MenuClick()} />
                         </div>
@@ -78,8 +74,6 @@ export default function Header() {
                                 </div>
                             </>
                         ) : null}
-                    </>
-                )}
             </div>
         </div>
     );
