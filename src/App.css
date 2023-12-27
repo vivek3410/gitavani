@@ -271,6 +271,13 @@
             justify-content: center;
     padding-top: 10px;
   }
+
+  /* @media screen and (max-width: 768px) {
+    .do_section .do_container {
+      padding-top: 10px;
+    }
+    
+  } */
   
   .do_section .do_container .box {
     text-align: center;
@@ -691,6 +698,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
   }
   
   .info_section .info_form .social_box a {

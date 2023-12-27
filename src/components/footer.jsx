@@ -8,6 +8,7 @@ import fb from '../images/fb.png';
 import twitter from '../images/twitter.png';
 import linkedin from '../images/linkedin.png';
 import youtube from '../images/youtube.png';
+import { Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -79,15 +80,16 @@ export default function Footer() {
                 </form> */}
                 <div class="social_box">
                     <a href="">
-                        <img src={fb} alt="" />
+                        {/* <img src={fb} alt="" /> */}
                     </a>
-                    <a href="">
-                        <img src={twitter} alt="" />
+                    <a href="https://www.instagram.com/gaurangabace/">
+                        {/* <img src={twitter} alt="" /> */}
+                        <Instagram color='white'/>
                     </a>
                     <a href="">
                         <img src={linkedin} alt="" />
                     </a>
-                    <a href="">
+                    <a href="https://www.youtube.com/channel/UC0px0-L5aGti0BhY6XKtneA">
                         <img src={youtube} alt="" />
                     </a>
                 </div>

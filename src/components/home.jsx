@@ -125,8 +125,7 @@ export default function Home() {
               CREATIVE WORKS
             </h2>
             <p>
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation
+            We follow a systematic and collaborative approach to ensure the success of your project. From initial concept to the final launch, our process is transparent, efficient, and designed to deliver outstanding results.
             </p>
           </div>
           <div class="work_container layout_padding2">
@@ -171,7 +170,7 @@ function Whatwedo() {
           </p>
         </div>
         <div class="do_container">
-          <div class="box arrow-start arrow_bg">
+          <div class="box">
             <div class="img-box">
               <img src={d1} alt="" />
             </div>
@@ -181,7 +180,7 @@ function Whatwedo() {
               </h6>
             </div>
           </div>
-          <div class="box arrow-middle arrow_bg">
+          <div class="box ">
             <div class="img-box">
               <img src={d2} alt="" />
             </div>
@@ -191,7 +190,7 @@ function Whatwedo() {
               </h6>
             </div>
           </div>
-          <div class="box arrow-middle arrow_bg">
+          <div class="box">
             <div class="img-box">
               <img src={d3} alt="" />
             </div>
@@ -201,7 +200,7 @@ function Whatwedo() {
               </h6>
             </div>
           </div>
-          <div class="box arrow-end arrow_bg">
+          <div class="box ">
             <div class="img-box">
               <img src={d4} alt="" />
             </div>
