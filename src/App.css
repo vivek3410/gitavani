@@ -464,7 +464,7 @@
   .client_section .carousel-wrap {
     margin: 0 auto;
     padding: 0;
-    position: relative;
+    position: none;
   }
   
   .client_section .owl-nav > div {

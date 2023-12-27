@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <>
       <div className='hero_area1'>
-        <section class="slider_section position-relative">
+        <section class="slider_section">
           <div class="container">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
@@ -37,7 +37,7 @@ export default function Home() {
                 <div class="carousel-item active">
                   <div class="row">
                     <div class="col">
-                      <div class="detail-box">
+                      <div class="detail-box relative">
                         <div>
                           <h2>
                             welcome to
