@@ -46,12 +46,12 @@ export default function Header() {
                 </div>
                 {/* <FontAwesomeIcon icon="fa-solid fa-bars" width={30} height={30} color='white'/> */}
                 {/* <FontAwesomeIcon icon="fa-solid fa-bars" style={{color: "#fcfcfc",}} className='cursor-pointer'/> */}
-                <div className='cursor-pointer'>
+                <div className='cursor-pointer block sm:hidden'>
                     <Menu className='text-white' onClick={() => MenuClick()} />
                 </div>
                 {showMenu && (
                     <>
-                        <div className='absolute z-30 top-[3.5em] right-5 w-1/4  bg-white rounded-xl'>
+                        <div className='absolute shadow-2xl z-30 top-[3.5em] right-5 w-1/4  bg-white rounded-xl'>
                         {/* <div className=' text-white absolute right-5 cursor-pointer' onClick={() => setShowMenu(false)}>x</div> */}
                             <div className='flex flex-col gap-4 p-[1em] '>
                                 {routes.map((route) => (
