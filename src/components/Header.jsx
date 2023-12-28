@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Menu } from 'lucide-react'
-import React from 'react';
+import React , {useCallback} from 'react';
 
 export default function Header() {
     const [showMenu, setShowMenu] = React.useState(false);
@@ -26,9 +26,12 @@ export default function Header() {
         //     label: "Portfolio",
         // }
     ]
-    function MenuClick() {
-        setShowMenu(!showMenu);
-    }
+    const toggle = useCallback(
+      () => {
+        setShowMenu(!showMenu)
+      },
+      [showMenu],
+    );
 
     // useEffect(() => {
     //     const handleResize = () => {
@@ -58,22 +61,22 @@ export default function Header() {
                             <Link key={route.path} className='hover:no-underline text-white text-none cursor-pointer' to={route.path} >{route.label}</Link>
                         ))}
                     </div>
-                        <div className='cursor-pointer block sm:hidden'>
-                            <Menu className='text-white' onClick={() => MenuClick()} />
-                        </div>
-                        {showMenu ? (
-                            <>
-                                <div className='block sm:hidden  absolute shadow-2xl z-30 top-[3.5em] right-5 w-[10em] sm:w-1/4  bg-white rounded-xl'>
-                                    <div className='flex flex-col gap-4 p-[1em] '>
-                                        {routes.map((route) => (
-                                            <>
-                                                <Link key={route.path} className='hover:no-underline text-black text-none cursor-pointer ' to={route.path} >{route.label}</Link>
-                                            </>
-                                        ))}
-                                    </div>
+                    <div className='cursor-pointer block sm:hidden'>
+                        <Menu className='text-white' onClick={toggle} />
+                    </div>
+                    {showMenu ? (
+                        <>
+                            <div className='block sm:hidden  absolute shadow-2xl z-30 top-[3.5em] right-5 w-[10em] sm:w-1/4  bg-white rounded-xl'>
+                                <div className='flex flex-col gap-4 p-[1em] '>
+                                    {routes.map((route) => (
+                                        <>
+                                            <Link key={route.path} onClick={toggle} className='hover:no-underline text-black text-none cursor-pointer ' to={route.path} >{route.label}</Link>
+                                        </>
+                                    ))}
                                 </div>
-                            </>
-                        ) : null}
+                            </div>
+                        </>
+                    ) : null}
             </div>
         </div>
     );
